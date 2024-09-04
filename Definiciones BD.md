@@ -28,3 +28,7 @@
 |**Variable de Base de datos**| es el estado de la base de datos y no se puede regresar a un estado anterior|
 |**DBMS**|Es un programa o sistema que se usa para manejar, consultar y actualizar el estado de una base de datos|
 |**Tuplas**| Conjunto de las especificaciones|
+|**Grado de una tabla**|es el numero de atributos que tiene|
+|**Cardinalidad**|numero de elementos de un conjunto o numero de tuplas|
+|**un dato atomico**|debe de ser lo mas pequeño posible|
+|**Operador proyeccion**|π es un operador unario que tiene como entrada una tabla y produce como resultado solo los atributos especificados
