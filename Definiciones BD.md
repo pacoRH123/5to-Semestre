@@ -1,5 +1,6 @@
 | Concepto                | Descripción                                                                                              |
 |-------------------------|----------------------------------------------------------------------------------------------------------|
+|**Base de Datos**| Se refiere a los datos que son guardados por una organización o individuo, de alguna manera estructurada|
 | **Valor**               | Una constante individual con un significado bien definido.                                               |
 | **Dato**                | Es la representación de algo.                                                                           |
 | **Variable**            | Es quien puede poseer un valor y cambia respecto al tiempo o uso.                                        |
@@ -24,11 +25,13 @@
 |**restricciones**| Son las limitantes para un campo. Se puede pensar como el rango de la segunda coordenada|
 |**Modelo de datos**| coleccion de reglas de integridad, colecciones de estructuras de negocio, coleccion de operadores|
 |**Integridad**| 
-|**Base de Datos**| Se refiere a los datos que son guardados por una organización o individuo, de alguna manera estructurada|
 |**Variable de Base de datos**| es el estado de la base de datos y no se puede regresar a un estado anterior|
 |**DBMS**|Es un programa o sistema que se usa para manejar, consultar y actualizar el estado de una base de datos|
 |**Tuplas**| Conjunto de las especificaciones|
 |**Grado de una tabla**|es el numero de atributos que tiene|
-|**Cardinalidad**|numero de elementos de un conjunto o numero de tuplas|
+|**Cardinalidad de una Tabla**|numero de elementos de un conjunto o numero de tuplas|
 |**un dato atomico**|debe de ser lo mas pequeño posible|
-|**Operador proyeccion**|π es un operador unario que tiene como entrada una tabla y produce como resultado solo los atributos especificados
+|**Operador proyeccion**|π es un operador unario que tiene como entrada una tabla y produce como resultado solo los atributos especificados|
+|**Operador Restriccion**|σ produce como resultado los mismos atributos que contiene la relación original y las tuplas que sean especificadas|
+|**Operador Renombrar**|Este operador toma una relación, y renombra los atributos indicados|
+|**Like** | _    % |
