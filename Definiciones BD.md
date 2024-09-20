@@ -35,3 +35,5 @@
 |**Operador Restriccion**|σ produce como resultado los mismos atributos que contiene la relación original y las tuplas que sean especificadas|
 |**Operador Renombrar**|Este operador toma una relación, y renombra los atributos indicados|
 |**Like** | _    % |
+|**Join**| produce como resultadouna nueva relación con todos los dominios de las relaciones originales|
+|**Operador Agrupar**|El operador agrupar nos permite “reunir” valores de los atributos|
