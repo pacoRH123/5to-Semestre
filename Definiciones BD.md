@@ -13,6 +13,7 @@
 | **Familias de conjuntos** | Se dan cuando existen conjuntos cuyos elementos son a su vez conjuntos.                                 |
 | **Conjunto potencia**   | Es aquel que está conformado por todos los conjuntos posibles de otro.                                    |
 | **Relación de A a B**   | Se define como un subconjunto del producto cartesiano A × B.                                              |
+|**dominio de un atributo**| es el conjunto de valores permitidos que dicho atributo puede tomar  |
 | **Dominio**             | Son los valores que se pueden tomar de la primera coordenada del par ordenado.                           |
 | **Rango o contradominio** | Son los valores que se pueden tomar de la segunda coordenada del par ordenado.                           |
 | **Funciones**           | Son relaciones donde, para cada elemento del dominio, sólo existe un elemento del contradominio.          |
@@ -31,7 +32,7 @@
 |**Grado de una tabla**|es el numero de atributos que tiene|
 |**Cardinalidad de una Tabla**|numero de elementos de un conjunto o numero de tuplas|
 |**un dato atomico**|debe de ser lo mas pequeño posible|
-|**Operador proyeccion**|π es un operador unario que tiene como entrada una tabla y produce como resultado solo los atributos especificados|
+|**Operador proyeccion**|π es un operador unario que tiene como entrada una tabla y produce como resultado solo los atributos especificados, modifica el grado|
 |**Operador Restriccion**|σ produce como resultado los mismos atributos que contiene la relación original y las tuplas que sean especificadas|
 |**Operador Renombrar**|Este operador toma una relación, y renombra los atributos indicados|
 |**Like** | _    % |
