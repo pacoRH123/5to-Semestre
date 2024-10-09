@@ -29,3 +29,5 @@
 | `EXISTS`              | Comprueba si hay filas que cumplen con una condición             | `SELECT * FROM empleados WHERE EXISTS (SELECT * FROM proyectos WHERE empleados.id = proyectos.empleado_id);` |
 | `ANY`                  | Compara un valor con cualquier valor de un conjunto              | `SELECT * FROM empleados WHERE salario > ANY (SELECT salario FROM empleados WHERE departamento = 'Ventas');` |
 | `ALL`                  | Compara un valor con todos los valores de un conjunto            | `SELECT * FROM empleados WHERE salario > ALL (SELECT salario FROM empleados WHERE departamento = 'Ventas');` |
+|`INNER JOIN`||
+|`NATURAL JOIN`|es una especificación del InnerJoin. Junta dos tablas donde, la columna que las hace juntables, tiene el mismo nombre en ambas tablas|`SELECT D.Título, D.Año, Concat(P.Nombre, ‘ ‘, P.Apellido) Producer FROM Discos D NATURAL JOIN Productores P `|
