@@ -38,3 +38,4 @@
 |**Like** | _    % |
 |**Join**| produce como resultadouna nueva relación con todos los dominios de las relaciones originales|
 |**Operador Agrupar**|El operador agrupar nos permite “reunir” valores de los atributos|
+|**Subconsultas**|es una consulta dentro deuna consulta. Usualmente se usa en la cláusula WHEREde la consulta padre.|
