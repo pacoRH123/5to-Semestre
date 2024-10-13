@@ -31,3 +31,7 @@
 | `ALL`                  | Compara un valor con todos los valores de un conjunto            | `SELECT * FROM empleados WHERE salario > ALL (SELECT salario FROM empleados WHERE departamento = 'Ventas');` |
 |`INNER JOIN`||
 |`NATURAL JOIN`|es una especificación del InnerJoin. Junta dos tablas donde, la columna que las hace juntables, tiene el mismo nombre en ambas tablas|`SELECT D.Título, D.Año, Concat(P.Nombre, ‘ ‘, P.Apellido) Producer FROM Discos D NATURAL JOIN Productores P `|
+| `EXTRACT`                    | Se utiliza para extraer partes específicas de una fecha, como el año, mes o día.     | `SELECT EXTRACT(YEAR FROM fecha_contratacion) AS año FROM empleados;` |
+| `FETCH FIRST ROWS ONLY`      | Se utiliza en combinación con `ORDER BY` para limitar el número de filas devueltas.  | `SELECT * FROM empleados ORDER BY salario DESC FETCH FIRST 10 ROWS ONLY;` |
+| `ROWNUM`                     | Asigna un número de fila a cada fila devuelta por la consulta. Es útil para limitar resultados. | `SELECT * FROM empleados WHERE ROWNUM <= 10;`               |
+
