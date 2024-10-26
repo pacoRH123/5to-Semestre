@@ -1,48 +1,59 @@
 @startuml
-entity "Clientes" {
-  +cliente_id: int [PK]
-  nombre: varchar
-  direccion: varchar
-  telefono: varchar
-  email: varchar
+
+entity "tProductos" {
+  -Id_producto: INT [PK]
+  +Id_proveedor: INT [FK]
+  +Id_sabor: INT [FK]
+  +Id_tamano: INT [FK]
+  +Id_Tproducto: INT [FK]
+  *Cantidad: INT
+  *Precio: INT
 }
 
-entity "Productos" {
-  +producto_id: int [PK]
-  nombre_producto: varchar
-  tipo_producto: varchar
-  precio: decimal
-  stock: int
+entity "tTipo_Producto" {
+  -Id_Tproducto: INT [PK]
+  *Nombre: VARCHAR 
 }
 
-entity "Proveedores" {
-  +proveedor_id: int [PK]
-  nombre_proveedor: varchar
-  direccion_proveedor: varchar
-  telefono_proveedor: varchar
+entity "tSabor" {
+  -Id_sabor: INT [PK]
+  *Sabor 
 }
 
-entity "Compras" {
-  +compra_id: int [PK]
-  fecha_compra: date
-  total_compra: decimal
+
+entity "tTamano" {
+  -Id_tamano: INT [PK]
+  *Tamano
 }
 
-entity "Detalles de compra" {
-  +detalle_id: int [PK]
-  cantidad: int
-  subtotal: decimal
+entity "tVenta" {
+  -Id_venta: INT [PK]
+  +Id_producto: INT [FK]
+  +Id_vendedor: INT [FK]
+  +Id_cliente: INT [FK]
+  *F_venta: DATE
 }
 
-entity "Empleados" {
-  +empleado_id: int [PK]
-  nombre_empleado: varchar
-  puesto: varchar
-  telefono_empleado: varchar
+
+entity "tVendedor" {
+  -Id_vendedor: INT [PK]
+  *Nombre: VARCHAR
+  *Apellido_p: VARCHAR
+  *Apellido_M: VARCHAR
+  *F_nacimiento: DATE
 }
 
-Compras ||--o{ "Detalles de compra" : tiene
-Clientes ||--o{ Compras : realiza
-Productos ||--o{ "Detalles de compra" : pertenece a
-Proveedores ||--o{ Productos : suministra
+entity "tCliente" {
+  -Id_cliente: INT [PK]
+  *Nombre: VARCHAR
+  *Apellido_p: VARCHAR
+  *Apellido_M: VARCHAR
+}
+
+tVendedor ||--|{ tVenta 
+tProductos}|-||tSabor
+tProductos}|--||tTamano
+tTipo_Producto||--|{tProductos
+tProductos||--|{tVenta
+tCliente||-|{tVenta
 @enduml
