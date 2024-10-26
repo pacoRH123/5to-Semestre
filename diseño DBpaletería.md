@@ -2,7 +2,6 @@
 
 entity "tProductos" {
   -Id_producto: INT [PK]
-  +Id_proveedor: INT [FK]
   +Id_sabor: INT [FK]
   +Id_tamano: INT [FK]
   +Id_Tproducto: INT [FK]
@@ -17,13 +16,13 @@ entity "tTipo_Producto" {
 
 entity "tSabor" {
   -Id_sabor: INT [PK]
-  *Sabor 
+  *Sabor: VARCHAR
 }
 
 
 entity "tTamano" {
   -Id_tamano: INT [PK]
-  *Tamano
+  *Tamano: VARCHAR
 }
 
 entity "tVenta" {
