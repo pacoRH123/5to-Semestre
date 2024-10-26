@@ -1,12 +1,12 @@
 @startuml
 
-entity "tProductos" {
+entity "tProducto" {
   -Id_producto: INT [PK]
   +Id_sabor: INT [FK]
   +Id_tamano: INT [FK]
   +Id_Tproducto: INT [FK]
   *Cantidad: INT
-  *Precio: INT
+  *Precio: NUMERIC
 }
 
 entity "tTipo_Producto" {
@@ -38,7 +38,7 @@ entity "tVendedor" {
   -Id_vendedor: INT [PK]
   *Nombre: VARCHAR
   *Apellido_p: VARCHAR
-  *Apellido_M: VARCHAR
+  *Apellido_m: VARCHAR
   *F_nacimiento: DATE
 }
 
@@ -46,13 +46,13 @@ entity "tCliente" {
   -Id_cliente: INT [PK]
   *Nombre: VARCHAR
   *Apellido_p: VARCHAR
-  *Apellido_M: VARCHAR
+  *Apellido_m: VARCHAR
 }
 
 tVendedor ||--|{ tVenta 
-tProductos}|-||tSabor
-tProductos}|--||tTamano
-tTipo_Producto||--|{tProductos
-tProductos||--|{tVenta
+tProducto}|-||tSabor
+tProducto}|--||tTamano
+tTipo_Producto||--|{tProducto
+tProducto||--|{tVenta
 tCliente||-|{tVenta
 @enduml
