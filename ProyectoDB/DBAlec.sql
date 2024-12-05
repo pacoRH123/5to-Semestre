@@ -1,13 +1,11 @@
 USE master;
 GO
-
+    
 CREATE DATABASE AlecDB;
 GO
 
-
 USE AlecDB;
 GO
-
 
 CREATE TABLE Direccion (
     ID_direccion INT PRIMARY KEY,
@@ -83,7 +81,7 @@ GO
 CREATE TABLE Deposito (
     ID_deposito INT PRIMARY KEY,
     Fecha_deposito DATE NOT NULL,
-    Fecha_devolucion DATE NOT NULL,
+    Fecha_devolucion DATE,
     Estado VARCHAR(15) NOT NULL, --activo/finalizado
     CONSTRAINT ck_estado_deposito CHECK (Estado IN ('Activo', 'Finalizado'))
 );
